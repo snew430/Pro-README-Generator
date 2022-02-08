@@ -1,4 +1,4 @@
-// TODO: Create a function function that returns a license badge based on which license is passed in
+
 // If there is no license, return an empty string
 renderLicenseBadge = (license) => {
   switch (license) {
@@ -14,7 +14,7 @@ renderLicenseBadge = (license) => {
       ``;
   }
 };
-// TODO: Create a function that returns the license link
+
 // If there is no license, return an empty string
 renderLicenseLink = (license) => {
   if (!license) {
@@ -25,14 +25,13 @@ renderLicenseLink = (license) => {
   }
 };
 
-// TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 renderLicenseSection = (license) => {
   if (!license) {
     return ``;
   } else {
     return `## License
-    * This project is covered under the ${license} license
+    * This project is covered under the ${license} license.  Click on badge at the top of the README for more information.
     `;
   }
 };

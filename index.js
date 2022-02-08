@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+
 const generateMarkdown = require("./utils/generateMarkdown.js");
 const inquirer = require("inquirer");
 const fs = require("fs");
@@ -155,7 +155,6 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
 writeToFile = (fileName, data) => {
   if (fileName === undefined){
     fileName = "README"
@@ -169,15 +168,10 @@ writeToFile = (fileName, data) => {
   });
 };
 
-// TODO: Create a function to initialize app
 init = () => {
   return inquirer.prompt(questions).then((readMeData) => {
     writeToFile(readMeData.fileName, readMeData);
   });
 };
 
-// Function call to initialize app
 init();
-
-// WHEN I choose a license for my application from a list of options
-// THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
